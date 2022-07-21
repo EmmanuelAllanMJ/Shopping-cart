@@ -7,6 +7,8 @@ function HeaderCartButton(props) {
   const cartCtx = useContext(CartContext);
 
   //cartCtc.items.length wont work
+  //How does reduce work
+  //items.reduce((<cumulative or total>, item)=>{},<initial value>))
   const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
     return curNumber + item.amount;
   }, 0);
