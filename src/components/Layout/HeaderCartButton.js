@@ -9,6 +9,7 @@ function HeaderCartButton(props) {
   //cartCtc.items.length wont work
   //How does reduce work
   //items.reduce((<cumulative or total>, item)=>{},<initial value>))
+  //This is to add total amount in cart button
   const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
     return curNumber + item.amount;
   }, 0);

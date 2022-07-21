@@ -12,6 +12,7 @@ function MealItem(props) {
 
   //Here we assign amount:amount because we are passing amount value to HeaderCartButton where calculating total item takes place
   const addToCartHandler = (amount) => {
+    // Here item is parameter
     cartCtx.addItem({
       id: props.id,
       name: props.name,
